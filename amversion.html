@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Setup Consultants - Dubai</title>
+    <style>
+        /* CSS Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        nav {
+            background: #fff;
+            padding: 20px 80px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #007bff;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #007bff, #00ff88);
+            min-height: 100vh;
+            padding: 160px 80px 80px;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .hero-text {
+            flex: 1;
+            color: #fff;
+        }
+
+        .hero-text h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .consultation-form {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 10px;
+            flex: 1;
+            max-width: 500px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        button {
+            background: #007bff;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1.1rem;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #0056b3;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                padding: 20px;
+            }
+            
+            .hero {
+                padding: 120px 20px 40px;
+            }
+            
+            .hero-content {
+                flex-direction: column;
+            }
+            
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul class="nav-links">
+            <li><a href="#"><img src="logo.png" alt="Logo" style="height:30px;"></li>
+            <li><a href="#">Company Setup</a></li>
+            <li><a href="#">Accounting</a></li>
+            <li><a href="#">Auditing</a></li>
+            <li><a href="#">Auditory & Consulting</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">News & Media</a></li>
+            <li><a href="#">ZOEHD Implementation</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Business Setup Consultants in Dubai, UAE</h1>
+                <p>We take care of all the paperwork</p>
+            </div>
+
+            <!-- Consultation Form -->
+            <form class="consultation-form" onsubmit="return validateForm()">
+                <h2>FREE CONSULTATION</h2>
+                <div class="form-group">
+                    <label>Name:</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label>Mobile Number:</label>
+                    <input type="tel" id="mobile" required>
+                </div>
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label>Company Name:</label>
+                    <input type="text" id="company" required>
+                </div>
+                <div class="form-group">
+                    <label>How may I help you?</label>
+                    <textarea id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Wire Online!</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        // JavaScript for form validation
+        function validateForm() {
+            const name = document.getElementById('name').value;
+            const mobile = document.getElementById('mobile').value;
+            const email = document.getElementById('email').value;
+            
+            if(name === "" || mobile === "" || email === "") {
+                alert("Please fill all required fields");
+                return false;
+            }
+
+            // Simple mobile validation
+            if(!/^\d{10}$/.test(mobile)) {
+                alert("Please enter a valid 10-digit mobile number");
+                return false;
+            }
+
+            // Simple email validation
+            if(!/^\S+@\S+\.\S+$/.test(email)) {
+                alert("Please enter a valid email address");
+                return false;
+            }
+
+            alert("Thank you for your submission! We'll contact you soon.");
+            return true;
+        }
+
+        // Smooth scroll for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AS Associate - Accounting & Business Services</title>
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Main Section Styling */
+        .services-section {
+            padding: 80px 20px;
+            background: #f9f9f9;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 50px;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Service Card Design */
+        .service-card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .service-card h3 {
+            color: #3498db;
+            margin-bottom: 15px;
+            font-size: 1.5em;
+        }
+
+        .service-card p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+            min-height: 80px;
+        }
+
+        .read-more {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .read-more:hover {
+            background: #2980b9;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+<section class="services-section">
+        <h1 class="section-title">What We Do</h1>
+        <p style="text-align: center; margin-bottom: 40px; font-size: 1.2em;">
+            Let us take care of your accounting, audit and financial management needs with our comprehensive VAT-compliant services!
+        </p>
+
+        <div class="services-grid">
+            <!-- Business Setup -->
+            <div class="service-card">
+                <h3>Business Setup</h3>
+                <p>Our business setup services make it easier for entrepreneurs to start their own business, with the right structure and investments in place to ensure success.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+
+            <!-- Accounting -->
+            <div class="service-card">
+                <h3>Accounting</h3>
+                <p>We strive to make accounting work easier and more transparent, while providing professional advice for several accounting companies in Dubai.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+
+            <!-- Audit -->
+            <div class="service-card">
+                <h3>Audit</h3>
+                <p>By adopting quality <strong>audit services in the UAE</strong>, you can be sure that your company is in compliance with all applicable laws, rules, and accounting standards.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+
+            <!-- Legal -->
+            <div class="service-card">
+                <h3>Legal</h3>
+                <p>Make AS. A Associate your primary choice for any of your corporate, commercial, legal, or asset management needs.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+
+            <!-- ICV Certification -->
+            <div class="service-card">
+                <h3>ICV Certification</h3>
+                <p>We can help you obtain the in-Country value certifications you need to do business with oil majors in the United Arab Emirates.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+
+            <!-- Liquidation -->
+            <div class="service-card">
+                <h3>Liquidation</h3>
+                <p>To make sure you get the most out of your investment, we can contribute our unmatched experience to the financial process.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Add smooth scroll behavior for "Read More" links
+        document.querySelectorAll('.read-more').forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                // Add your custom functionality here
+                alert('Read More functionality to be implemented!');
+            });
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Consultants Dubai</title>
+    <style>
+        /* Previous styles remain unchanged */
+
+        /* Why Choose Us Section */
+        .why-choose {
+            padding: 80px 40px;
+            background: #fff;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        .stat-box {
+            text-align: center;
+            padding: 30px;
+            background: #f9f9f9;
+            border-radius: 10px;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            color: #007bff;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 1.1rem;
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            max-width: 1200px;
+            margin: 40px auto;
+        }
+
+        .value-card {
+            padding: 30px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .value-card h3 {
+            color: #007bff;
+            margin: 20px 0;
+        }
+
+        /* Footer Styles */
+        .site-footer {
+            background: #333;
+            color: #fff;
+            padding: 60px 40px 20px;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 30px;
+        }
+
+        .footer-section h4 {
+            color: #fff;
+            margin-bottom: 20px;
+            font-size: 1.2rem;
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links a {
+            color: #ccc;
+            text-decoration: none;
+            line-height: 2;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: #007bff;
+        }
+
+        .copyright {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #444;
+            color: #ccc;
+        }
+
+        @media (max-width: 992px) {
+            .stats-grid,
+            .values-grid,
+            .footer-content {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .stats-grid,
+            .values-grid,
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Previous sections remain unchanged -->
+
+    <!-- Why Choose Us Section -->
+    
+        <div class="values-grid">
+            <div class="value-card">
+                <h3>EFFICIENCY</h3>
+                <p>We offer unparalleled efficiency and reliability. Our goal is to give our customers the best experience from accounting and auditing firms in UAE</p>
+            </div>
+            <div class="value-card">
+                <h3>INTEGRITY</h3>
+                <p>We are committed to providing premium accounting services in Dubai with utmost integrity and ethical, trustworthy services.</p>
+            </div>
+            <div class="value-card">
+                <h3>TRANSPARENCY</h3>
+                <p>We provide reliable, transparent auditing services in Dubai with our experienced team of professionals.</p>
+            </div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-box">
+                <div class="stat-number">2500+</div>
+                <div class="stat-label">Customers</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">5000+</div>
+                <div class="stat-label">Audits Completed</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-number">100+</div>
+                <div class="stat-label">Dedicated Team</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>Leading business consultants in Dubai providing comprehensive financial and business setup services.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Company Setup</a></li>
+                    <li><a href="#">Accounting</a></li>
+                    <li><a href="#">Auditing</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Services</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Business Setup</a></li>
+                    <li><a href="#">ICV Certification</a></li>
+                    <li><a href="#">Legal Services</a></li>
+                    <li><a href="#">Liquidation</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul class="footer-links">
+                    <li>Phone: +971 4 123 4567</li>
+                    <li>Email: info@company.com</li>
+                    <li>Address: Dubai, UAE</li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2023 Business Consultants. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Previous JavaScript remains unchanged -->
+</body>
+</html>
